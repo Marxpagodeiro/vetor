@@ -1,54 +1,34 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-
-package com.mycompany.vetor;
+package vetor2;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Bruno
+ * @author 20222TPMI0035
  */
 public class Vetor2 {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        double[]lados = new double[3];
-        int cont = 0;
-        while(cont< lados.length){
-            System.out.println("digite os lados " + (cont+1));
-            lados[cont] =in.nextDouble();
-            cont++;
+        // TODO code application logic here
+        Scanner in=new Scanner(System.in);
+        int[]vet = {5,21,8,13,7,11};
+        for(int i =0;i<vet.length;i++){
+            System.out.println(vet[i]);
         }
-        int pos=0;
-        cont=1;
-        while(cont<lados.length){
-            if(lados[cont]>lados[pos]){
-                pos=cont;
-            }
-            cont++;
-        }
-        cont=0;
-        double total=0;
-        while(cont<lados.length){
-            if(cont!=pos){
-                total=total+lados[cont];
-            }
-            cont++;
-        }
-        if(total>lados[pos]){
-            System.out.println("triangulos");
-            if(lados[0]==lados[1] && lados[1]==lados[2]){
-                System.out.println("Equilatero");
-            }else if(lados[0]==lados[1] || lados[0]==lados[2] || lados[1]==lados[2]){
-                System.out.println("isósceles");
-            }else{
-                System.out.println("escaleno");
-            }
-        }else{
-           System.out.println("Não é triangulos"); 
-        } 
     }
+    
 }
+/*
+multiplicação
+primo
+triangulo
+fatorial
+*/
